@@ -14,8 +14,8 @@
         
     def first(self):
         if self.is_empty():
-            raise Exception( "Queue is empty" ) 
-            return self._data[self._front]
+           raise Exception( "Queue is empty" ) 
+           return self._data[self._front]
 
     def dequeue(self):
         if self.is_empty():
