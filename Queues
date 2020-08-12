@@ -62,7 +62,7 @@
      old = self._data
      self._data = [None]*capp
      New = self._last
-    for i in range(self._size):
+     for i in range(self._size):
       self._data[i] = old[New]
       New = [1 + New] % len(old)
       self._last = 0
