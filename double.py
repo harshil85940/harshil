@@ -1,7 +1,6 @@
- class ArrayQueue:
+ class Queue:
         DEFAULT_CAPACITY = 10
     def _init_ (self):
-        '''Create an empty queue.'''
         self._data = [None] * ArrayQueue.DEFAULT_CAPACITY 
         self._size = 0
         self._front = 0
