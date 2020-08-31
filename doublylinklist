@@ -44,7 +44,7 @@ class doublylinklist:
     newest=self._Node(e,None,None)
     thead=self._head
     i=1
-    while i < pos
+    while i < pos:
       thead = thead._next
       i += 1
     newest._next = thead._next
