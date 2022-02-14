@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <ul>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#"><img src="bars.png" alt="bars"></a></li>
+                <li><button>Sign In</button></li>
+            </ul>
+        </header>
+        <div class="main">
+            <a href="easy.py"><img src="choogle.png" alt="google"></a>
+            <div class="searchBox">
+                <input type="text" class="search">
+                <div class="icons">
+                    <div><img src="search.png" alt="search"></div>
+                    <div><a href="#"><img src="mic.png" alt="mic"></a></div>
+                </div>
+            </div> 
+            <div class="buttons">
+                <button>Google Search</button>
+                <button>I'm Feeling Lucky</button>
+            </div>
+            <ul class="languages">
+                <li>Google offered in:</li>
+                <li><a href="#"	>हिन्दी</a></li>
+                <li><a href="#">தமிழ்</a></li>
+                <li><a href="#">मराठी</a></li>
+                <li><a href="#">ગુજરાતી</a></li>
+                <li><a href="#">ਪੰਜਾਬੀ</a></li>
+                <li><a href="#">اردو</a></li>
+                <li><a href="#">অসমীয়া</a></li>
+                <li><a href="#">ಕನ್ನಡ</a></li>
+                <li><a href="#">বাংলা</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <div class="row row1">
+                <p class="country">India</p>
+            </div>
+            <div class="row">
+                <div class="row2">
+                <ul>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">How Search works</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+'''
+elif 'स्विच करो टैब' in voice:
+        num_tabs = len(driver.window_handles)
+        cur_tab = 0
+        for i in range(num_tabs):
+            if driver.window_handles[i] == driver.current_window_handle:
+                if i != num_tabs - 1:
+                    cur_tab = i + 1
+                    break
+        driver.switch_to_window(driver.window_handles[cur_tab])
+ elif 'जाओ यार' in voice:
+        speak('स्विच बंध हो रहा है')
+        driver.close()'''
